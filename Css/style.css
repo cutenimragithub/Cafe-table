@@ -31,6 +31,11 @@ body{
     font-family: var(--primary-font);
     background-color: var(--bg-white);
     overflow-x: hidden;
+    background-image: url('../Images/cofee-img.jpg');
+    background-size: cover;
+    background-position: center;
+    position: relative;
+
 }
 a
 {
@@ -45,9 +50,7 @@ a
 ::-webkit-scrollbar-thumb{
     background: var(--primary-color);
 }
-section{
-    padding: 3.125rem 0;
-}
+
 .main-btn{
     font-size: 1rem;
     font-weight: 500;
@@ -89,7 +92,7 @@ h3 span{
 h5{
     font-size: 1.5rem;
     line-height: 1;
-    color: var(--primary-text);
+
     font-weight: 500;
     font-family: var(--secondary-font);
 }
@@ -240,9 +243,7 @@ font-weight: 500;
 }
 
 /* About Css */
-.about-wrapper{
-    padding-top: 9.375rem;
-}
+
 .about-wrapper .about-column{
     background-image: url('../Images/about.JPG');
     background-size: cover;
@@ -349,22 +350,68 @@ font-weight: 500;
 }
 
   /* Additional styling can go here */
-  .carousel-caption {
-    position: absolute;
-    
-    width: 100%;
-
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
+ 
+.table-bordered th {
+    border: 2px solid #987754; /* Example of a thicker border */
+    background-color: #7B3F00;
     color: #fff;
+}
+.table-bordered td{
+    background-color: #b99976;
+    color: #fff;
+} 
+.menu-wrapper .table-logo{
+    position: absolute;
+    left: 117px;
+    top: 0;
+    z-index: 1000;
+    width: 9%;
+    border-radius: 15px 0px 12px 0px;
+}
+
+
+.carousel-item {
+  
+  }
+  .carousel-item img {
+    height: 650px;
+    border-radius: 12px;
+    width: 100%;
+  }
+  .carousel-fade .carousel-item {
+    opacity: 0;
+    transition-property: opacity;
+    /* Transition time can be adjusted */
+    transition-duration: .5s;
+  }
+  .carousel-fade .carousel-item.active,
+  .carousel-fade .carousel-item-next.carousel-item-start,
+  .carousel-fade .carousel-item-prev.carousel-item-end {
+    opacity: 1;
+  }
+  .menu-table {
+    /* Your custom table styles */
+  }
+  /* Hide tables initially */
+  .hidden {
+    display: none;
+  }
+
+  .carousel-caption h5{
+   
+    clip-path: polygon(0% 0%, 100% 0%, 100% 75%, 75% 75%, 75% 100%, 50% 75%, 0% 75%);
+    background-color: #c5670570;
+    
+    color: #fff;
+    padding: 17px 11px 38px 15px;
+    width: 60%;
+    font-size: 21px;
     text-align: center;
-    background: rgba(0, 0, 0, 0.5);
-    padding: 10px;
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    top: -44px;
+    left: -69px;
 }
-.table-bordered td, .table-bordered th {
-    border: 2px solid #dee2e6; /* Example of a thicker border */
-    padding: 17px;
-    background-color: #dbc6aa;
-}
+
+ 
